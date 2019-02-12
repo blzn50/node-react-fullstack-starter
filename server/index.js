@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send({ data: 'from server' });
 });
 
